@@ -1,0 +1,112 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+
+  <html lang="en">
+  <head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Rooster Grin</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animations-extended.min.css' %}"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mdb.min.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css'%}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/game.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}"/>
+
+
+    {{ form.media }}
+  </head>
+
+<body class="elegant-color">
+{% block sidebar %}
+
+  <nav class="navbar navbar-expand-lg navbar-transparent warning-color">
+  <a class="navbar-brand text-white" href="{% url 'catalog:home' %}">Rooster Grin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-right">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#contact">Contact</a>
+        </li>
+      </ul>
+        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <h2>Rooster Grin</h2>
+                <p>San Francisco, CA</p>
+                <p>Facebook: <i class="fab fa-facebook example hoverable fa-2x"></i>money_mystery</p>
+                <p>Instagram: <i class="fab fa-instagram example hoverable fa-2x"></i>doublem_live</p>
+                </div>
+            </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </ul>
+    </div>
+  </nav>
+{% endblock %}
+
+
+{% block content %}{% endblock %}
+
+{% block footer %}
+<footer class="text-center font-small mt-4 wow fadeIn transparent">
+  
+  <br>
+  <!-- Social icons -->
+  <div class="pb-4">
+    <a href="https://www.facebook.com/tlang20" target="_blank">
+      <i class="fab fa-facebook-f mr-3 fa-2x"></i>
+    </a>
+    </a>
+    <a href="https://www.instagram.com/doublem_live/" target="_blank">
+      <i class="fab fa-instagram mr-3 fa-2x"></i>
+    </a>
+  </div>
+  <!-- Social icons -->
+
+  <!--Copyright-->
+  <div class="footer amber-text">
+    <h4><i class="fas fa-clock"></i>Designed by Terrence Langston</h4>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+{% endblock %}
+
+{% block javascript %}{% endblock %}
+<!-- Rooster Grin JavaScript Files -->
+<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js.map' %}"></script>
+<script type="text/javascript" src="{% static 'js/all.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
+
+</body>
+</html>
